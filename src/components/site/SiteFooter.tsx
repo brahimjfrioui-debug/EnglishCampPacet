@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Clock, Phone } from "lucide-react";
+import { MapPin, Clock, Phone } from "lucide-react";
 import { FULL_ADDRESS, NAV_LINKS, SITE } from "@/config/site";
 import { PROGRAMS } from "@/content/programs";
 import { Logo } from "./Logo";
@@ -59,16 +59,6 @@ export function SiteFooter() {
             <li className="flex gap-3">
               <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
               <a href={`tel:+${SITE.whatsappNumber}`} className="hover:text-accent">Telp/WA {SITE.phoneDisplay}</a>
-            </li>
-            <li className="flex gap-3">
-              <Mail className="mt-0.5 size-4 shrink-0 text-accent" />
-              {SITE.email ? (
-                <a href={`mailto:${SITE.email}`} className="hover:text-accent">
-                  {SITE.email}
-                </a>
-              ) : (
-                <span>[Email address to be added]</span>
-              )}
             </li>
             <li className="flex gap-3">
               <Clock className="mt-0.5 size-4 shrink-0 text-accent" />

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Clock, Mail, MapPin } from "lucide-react";
+import { Clock, MapPin } from "lucide-react";
 import { PageHeader } from "@/components/site/Section";
 import { InquiryForm } from "@/components/site/InquiryForm";
 import { SocialLinks } from "@/components/site/SocialLinks";
@@ -42,15 +42,6 @@ function ContactPage() {
           <ContactCard icon={<MapPin className="size-5" />} title="Address">
             <address className="not-italic">{FULL_ADDRESS}</address>
             <p className="mt-1 text-sm">({SITE.landmark})</p>
-          </ContactCard>
-          <ContactCard icon={<Mail className="size-5" />} title="Email">
-            {SITE.email ? (
-              <a href={`mailto:${SITE.email}`} className="hover:underline">
-                {SITE.email}
-              </a>
-            ) : (
-              <span>Reach us on WhatsApp — we reply quickly.</span>
-            )}
           </ContactCard>
           <ContactCard icon={<Clock className="size-5" />} title="Opening hours">
             {SITE.openingHours}
