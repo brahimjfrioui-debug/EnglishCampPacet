@@ -12,13 +12,12 @@ export function Logo({ className, inverted = false }: { className?: string; inve
         aria-hidden
         className="relative grid size-10 place-items-center rounded-2xl bg-accent text-accent-foreground shadow-soft transition-transform duration-300 group-hover:-rotate-6"
       >
-        <svg viewBox="0 0 32 32" className="size-6" fill="none">
+        <svg viewBox="0 0 32 32" className="size-7" fill="none">
           <path
-            d="M4 24 L13 10 L18 17 L21 13 L28 24 Z"
+            fillRule="evenodd"
             fill="currentColor"
-            opacity="0.92"
+            d="M7 5h18a4 4 0 0 1 4 4v11a4 4 0 0 1-4 4H15l-6 5v-5H7a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4zM16 8l7.500 13h-4.200l-1.100-2.200h-4.400L12.700 21H8.500zM16 13.200l-1.300 3h2.600z"
           />
-          <circle cx="23" cy="8" r="3" fill="currentColor" />
         </svg>
       </span>
       <span className="flex flex-col leading-none">
