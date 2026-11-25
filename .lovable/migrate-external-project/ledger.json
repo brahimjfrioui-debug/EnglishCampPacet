@@ -1,0 +1,86 @@
+[
+ {
+  "capability": "code (pages, components, content, styles)",
+  "source": "archive src/",
+  "outcome": "migrate",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "image assets (52 CDN pointers + 13 bundled jpgs)",
+  "source": "src/assets",
+  "outcome": "migrate; re-upload CDN assets into this project",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "schema",
+  "source": "none detected",
+  "outcome": "absent",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "records",
+  "source": "none detected (static content in src/content)",
+  "outcome": "absent",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "auth identities / authorization",
+  "source": "none detected",
+  "outcome": "absent",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "uploaded file bytes",
+  "source": "none (no storage)",
+  "outcome": "absent",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "external providers",
+  "source": "WhatsApp wa.me links, Google Maps embed",
+  "outcome": "preserve",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "public endpoints",
+  "source": "/sitemap.xml server route",
+  "outcome": "preserve",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "callbacks / webhooks / schedules",
+  "source": "none detected",
+  "outcome": "absent",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "secrets",
+  "source": "no env vars used",
+  "outcome": "absent",
+  "status": "verified",
+  "next_action": ""
+ },
+ {
+  "capability": "cutover",
+  "source": "canonical domain englishcamppacet.com in src/config/site.ts",
+  "outcome": "user action",
+  "status": "pending",
+  "next_action": "user publishes and connects the domain"
+ },
+ {
+  "capability": "verification",
+  "source": "tests + browser",
+  "outcome": "verify",
+  "status": "verified",
+  "next_action": ""
+ }
+]

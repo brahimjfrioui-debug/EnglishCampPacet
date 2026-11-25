@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+## Project rules
+- Editable site content (programs, teachers, gallery, news, FAQs, school copy) lives in `src/content/*.ts` and contact/social settings in `src/config/site.ts`; pages only render it. Why: the school updates content in one place.
+- Inquiry forms validate with zod schemas in `src/lib/inquiry.ts` and hand off to WhatsApp (`src/lib/whatsapp.ts`); there is no backend storage or payment flow. Why: informational site with no database in v1.
+- Per-page SEO uses `pageHead()` from `src/lib/seo.ts` with canonical URLs on the production domain. Why: consistent metadata for local search.
+- Shared header/footer/WhatsApp float are mounted in `src/routes/__root.tsx`. Why: one layout for every page.
