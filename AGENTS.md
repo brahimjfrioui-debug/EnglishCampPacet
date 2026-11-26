@@ -33,3 +33,4 @@ use the editor.
 - Inquiry forms validate with zod schemas in `src/lib/inquiry.ts` and hand off to WhatsApp (`src/lib/whatsapp.ts`); there is no backend storage or payment flow. Why: informational site with no database in v1.
 - Per-page SEO uses `pageHead()` from `src/lib/seo.ts` with canonical URLs on the production domain. Why: consistent metadata for local search.
 - Shared header/footer/WhatsApp float are mounted in `src/routes/__root.tsx`. Why: one layout for every page.
+- Camp photos are plain image files in `public/images/` and are referenced as `/images/<file>` strings from `src/content/images.ts`; do not use `.asset.json` pointers or `/__l5e/` URLs. Why: the site must run on independent hosting (Hostinger).
